@@ -6,7 +6,9 @@ sio = socketio.Server()
 #works with events handlers
 #ex. when client connects/disconnects
 
-app = socketio.WSGIApp(sio)
+app = socketio.WSGIApp(sio, static_files={
+    '/': './public/'
+})
 # used to connect to wsgi webserver
 
 
