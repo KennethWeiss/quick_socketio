@@ -1,0 +1,31 @@
+https://www.youtube.com/watch?v=tHQvTOcx_Ys
+Miguel Grinberg
+Socket.IO with python and javascript
+
+Part 1
+Created virtual environment
+python -m venv venv
+
+Activate virtual environment
+source venv/bin/activate
+
+pip install python-socketio
+
+Write a server
+add app.py file and copy code
+
+after creating instance of app= socketio.WSGIApp(sio)
+save and go to terminal
+
+in terminal install gunicorn
+pip install gunicorn
+
+gunicorn --thread 50 app:app
+8:36 in video
+
+Part 2
+Write javascript client to connect to server in part 1
+mkdir public
+add index.html to it
+Got CDN.js for socket.io from soket.io website
+ https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.3/socket.io.min.js
