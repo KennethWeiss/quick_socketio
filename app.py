@@ -19,7 +19,7 @@ def connect(sid, environ):
     print(sid, 'connected')
 
 @sio.event
-def disconnect(sid, environ):
+def disconnect(sid):
     print(sid, 'disconnected')
 # need to take socketio application and transfer to wsgi app that can interact with something like gunicorn
 #socketio has wsgiapp create instance above
